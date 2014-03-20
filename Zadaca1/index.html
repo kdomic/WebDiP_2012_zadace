@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="stylesheet/kdomic_1.css" id="css1" />
+        <link rel="stylesheet" type="text/css" href="stylesheet/kdomic_2.css" id="css2" />
+        <script type="text/javascript"> 
+            var cssType = 1;
+            function cssSet(){                
+                if(cssType===1){
+                    document.getElementById("css1").disabled = false;
+                    document.getElementById("css2").disabled = true;
+                } else {
+                    document.getElementById("css1").disabled = true;
+                    document.getElementById("css2").disabled = false;
+                }
+            };            
+            function cssChange(){
+                cssType += 1;
+                cssType %= 2;
+                cssSet();
+            }            
+            window.onload = cssSet();
+        </script>
+    </head>
+    <body>
+        <div id="outerDiv">
+            <header>
+                <nav id="mainMenu">
+                    <ul>
+                        <li><a href="#" class="current">Početna</a></li>
+                        <li><a href="register.html">Registracija</a></li>
+                        <li><a href="login.html">Prijava</a></li>
+                        <li><a href="javascript:cssChange()" >CSS zamjena</a></li>
+                    </ul>
+                </nav>
+                <nav id="subMenu">
+                    <ul>
+                        <li><a href="#omeni">O meni</a></li>
+                        <li><a href="#interesi">Interesi</a></li>
+                        <li><a href="#obrazovanje">Obrazovanje</a></li>
+                        <li><a href="#video">Video</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="subMenu"> </div>
+            <section>
+                <div id="omeniL">
+                    <h1>Krunoslav Domić</h1>
+                    <h2>Student at Faculty of Organization and Informatics</h2>
+                    <p>Moje ime je Krunoslav Domić i redoviti sam studant prediplomskog studija Informacijski sustavi (3. godina) na Fakultetu informatike i organizacije u Varaždinu.</p>
+                </div>
+                <div id="omeniC">
+                    <table>
+                        <tr>
+                            <td class="bold">E-mail: </td>
+                            <td>kdomic@foi.hr</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Skype: </td>
+                            <td>kdomic</td>
+                        </tr>
+                    </table>                    
+                </div>               
+                <div id="omeniR"><img src="images/krunoslavdomic.jpg" alt="Krunoslav Domic"/></div>
+                <div class="clear"></div>
+                <div id="omeni" class="lineDouble">
+                    <table class="cv">
+                        <tr>
+                            <td>O meni</td>
+                            <td>
+                                <dl>
+                                    <dt>Zašto FOI?</dt>
+                                    <dd>Oduvijek sam se volio baviti elektronikom, računalima i svime što je bilo vezano uz to. Slijedom toga logički izbor mojeg obrazovanja bili su fakulteti FER ili FOI. Na kraju odlučio sam da se želim baviti softverom tako da sam ipak upisao FOI. </dd>
+                                    <dt>Očekivanja od studija</dt>
+                                    <dd>Stjecanje potrebnih znanja koja će mi biti potrebna u daljnjem poslovnom životu</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="interesi" class="lineBottom">
+                    <table class="cv">
+                        <tr>
+                            <td>Interesi</td>
+                            <td>
+                                <ul>
+                                    <li>Uživati u životu</li>
+                                    <li>...</li>
+                                </ul>                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="obrazovanje" class="lineBottom">
+                    <table class="cv">
+                        <tr>
+                            <td>Obrazovanje</td>
+                            <td>
+                                <ol>
+                                    <li>1998. - 2003. : <a href="http://www.cvrcak.net/" target="_blank">Osnovna škola Vladimir Nazor, Slavonski Brod</a></li>
+                                    <li>2003. - 2006. : <a href="http://www.os-tar.skole.hr/" target="_blank">Osnovna škola Tar-Vabriga, Tar (Poreč)</a></li>
+                                    <li>2006. - 2010. : <a href="http://www.gssjd.hr/" target="_blank">Gimnazija i strukovna škola Jurja Dobrile, Pazin</a></li>
+                                    <li>2010. - danas : <a href="http://www.foi.unizg.hr/" target="_blank">Fakultet organizacije i informatike, Varaždin</a></li>
+                                </ol>                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="video" class="lineBottom">
+                    <table class="cv">
+                        <tr>
+                            <td>Video</td>
+                            <td>
+                                <div class="center">
+                                    <video controls width="300" height="200">
+                                        <source src="http://161.53.120.205/WebDiP/studenti/uploads/kdomic-60073202.mp4">
+                                    </video>
+                                </div>                                
+                            </td>
+                        </tr>
+                    </table>                    
+                </div>                
+            </section>
+            <footer>
+                <p> Copyright © 2013 Krunoslav Domić. All Rights Reserved. Sva prava pridržana. </p>
+                <p>
+                    <a href="http://validator.w3.org/check?uri=http%3A%2F%2Farka.foi.hr%2FWebDiP%2F2012%2Fvjezba_02%2Fkdomic%2F">
+                        <img style="border:0;width:88px;height:31px"
+                        src="http://www.fourquarters.biz/images/w3cvalidhtml5.jpg"
+                        alt="Valid HTML!"/>
+                    </a>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!"/>
+                    </a>
+                </p>       
+            </footer>
+        </div>
+    </body>
+</html>
